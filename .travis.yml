@@ -6,6 +6,6 @@ python:
 - "3.3"
 - "3.4"
 
-# command to run tests
+# command to run tests1
 script: make test
 
