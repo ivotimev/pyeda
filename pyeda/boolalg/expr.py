@@ -795,7 +795,7 @@ class Expression(boolfunc.Function):
 
         1. An atom node (constant or literal) has zero depth.
         2. A branch node (operator) has depth equal to the maximum depth of
-           its children (arguments) plus one.
+           its sub_blocks (arguments) plus one.
         """
         return self.node.depth()
 
@@ -804,7 +804,7 @@ class Expression(boolfunc.Function):
         """Return the size of the expression.
 
         1. An atom node (constant or literal) has size one.
-        2. A branch node (operator) has size equal to the sum of its children's
+        2. A branch node (operator) has size equal to the sum of its sub_blocks's
            sizes plus one.
         """
         return self.node.size()
