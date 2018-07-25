@@ -61,7 +61,7 @@ PARSER.add_argument(
           "(default: %(default)s)")
 )
 PARSER.add_argument(
-    '-P', metavar='LIMIT', type=int, default=-1, dest='propagation_limit',
+    '-system', metavar='LIMIT', type=int, default=-1, dest='propagation_limit',
     help='set propagation limit; negative means "none" (default: %(default)s)'
 )
 PARSER.add_argument(
